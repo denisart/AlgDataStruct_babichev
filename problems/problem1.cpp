@@ -35,8 +35,12 @@ int main() {
         } while (new_value != 0);
     }
 
-    for (const auto& i : numbers)
-        std::cout << i << " ";
+    if (numbers.size() == 0) {
+        std::cout << 0;
+    } else {
+        for (const auto& i : numbers)
+            std::cout << i << " ";
+    }
 
     std::cout << std::endl;
 
