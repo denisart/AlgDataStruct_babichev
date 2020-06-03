@@ -9,8 +9,6 @@
 #include <bits/stdc++.h>
 
 int main() {
-    unsigned int start_time =  clock();
-    // start coding
     std::set<int> numbers;
 
     int new_value = -1;
@@ -43,9 +41,5 @@ int main() {
     }
 
     std::cout << std::endl;
-
-    // finish coding
-    unsigned int finish_time =  clock();
-    std::cout << "Time complexity = " << finish_time - start_time << std::endl;
     return 0;
 }

@@ -9,31 +9,26 @@
 #include <bits/stdc++.h>
 
 int main() {
-    unsigned int start_time = clock();
-    // start coding
-    // int arrays_count = 0;
     int Na, Nb;
     std::cin >> Na >> Nb;
 
-    std::map<int, int> firstArray;
-    while (Na--) {
-        int new_value;
-        std::cin >> new_value;
 
+    std::map<int, int> firstArray = {};
+    int new_value;
+    while (Na--) {
+        std::cin >> new_value;
         firstArray[new_value]++;
     }
 
-    int arrays_count = 0;
-
+    int result = 0;
     int temp;
     std::cin >> temp;
     int count = 1;
-    if (firstArray[temp] > 0)
-        arrays_count++;
+    if (firstArray[temp])
+        result++;
     Nb--;
 
     while (Nb--) {
-        int new_value;
         std::cin >> new_value;
 
         if (new_value == temp) {
@@ -44,12 +39,9 @@ int main() {
         }
 
         if (firstArray[temp] >= count)
-            arrays_count++;
+            result++;
     }
 
-    std::cout << arrays_count << std::endl;
-    // finish coding
-    unsigned int finish_time =  clock();
-    std::cout << "Time complexity = " << finish_time - start_time << std::endl;
+    std::cout << result << std::endl;
     return 0;
 }
