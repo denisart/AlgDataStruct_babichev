@@ -5,6 +5,14 @@
     Output file:        std::cout
     Time complexity:    2 sec
     Memory complexity:  64 Mb
+
+    Let A = {a1 a2 ... an} and B = {b1 b2 ... bm}
+    are sets (maybe empty) and 1 <= ai, bj <= 20000.
+
+    Input:
+        a1 a2 ... an 0 b1 b2 ... bm 0
+    Output:
+        Sorted symmetric difference of A and B
 */
 #include <bits/stdc++.h>
 
