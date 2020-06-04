@@ -5,6 +5,18 @@
     Output file:        std::cout
     Time complexity:    2 sec
     Memory complexity:  64 Mb
+
+    There are 2 <= N <= 23 stones with integer
+    weights W1, W2, ..., WN. Partition 
+    the set W = {W1, W2, ..., WN} into two subsets
+    such that the difference of subset sums is minimum.
+
+    Input:
+        N
+        W1 W2 W3 ... WN
+
+    Output:
+        Minimal difference of subsets sums
 */
 #include <bits/stdc++.h>
 
