@@ -17,9 +17,9 @@
 #include <bits/stdc++.h>
 
 int main() {
-    std::set<int> numbers;
+    std::set<uint32_t> numbers;
 
-    int new_value = -1;
+    uint32_t new_value;
     std::cin >> new_value;
 
     if (new_value != 0) {

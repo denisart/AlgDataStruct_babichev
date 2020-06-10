@@ -20,7 +20,7 @@
 */
 #include <bits/stdc++.h>
 
-int findMin(const std::vector<int>& w, int sum) {
+int findMin(const std::vector<uint32_t>& w, uint32_t sum) {
     /*
         Let A = {A1, A2, ..., An} be a set with positive
         integer numbers;
@@ -67,7 +67,7 @@ int findMin(const std::vector<int>& w, int sum) {
         }
     }
 
-    int diff = INT_MAX;
+    int32_t diff = INT_MAX;
 
     // S - 2 * j is minimal when
     // j is maximal
@@ -83,11 +83,11 @@ int findMin(const std::vector<int>& w, int sum) {
 
 
 int main() {
-    short N;
+    uint8_t N;
     std::cin >> N;
 
-    std::vector<int> weights(N);
-    int sum = 0;
+    std::vector<uint32_t> weights(N);
+    uint32_t sum = 0;
     for (int i = 0; i < N; i++) {
         std::cin >> weights[i];
         sum += weights[i];

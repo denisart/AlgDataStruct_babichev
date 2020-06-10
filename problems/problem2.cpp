@@ -30,21 +30,21 @@
 #include <bits/stdc++.h>
 
 int main() {
-    int Na, Nb;
+    uint32_t Na, Nb;
     std::cin >> Na >> Nb;
 
 
-    std::map<int, int> firstArray = {};
-    int new_value;
+    std::map<int32_t, uint32_t> firstArray = {};
+    int32_t new_value;
     while (Na--) {
         std::cin >> new_value;
         firstArray[new_value]++;
     }
 
-    int result = 0;
-    int temp;
+    uint32_t result = 0;
+    int32_t temp;
     std::cin >> temp;
-    int count = 1;
+    uint32_t count = 1;
     if (firstArray[temp])
         result++;
     Nb--;

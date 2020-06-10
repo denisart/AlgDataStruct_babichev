@@ -33,19 +33,19 @@
 #include <bits/stdc++.h>
 
 int main() {
-    int N, M, MOD;
+    uint32_t N, M, MOD;
     std::cin >> N >> M >> MOD;
 
-    std::vector<int> coefs(N + 1);
+    std::vector<int32_t> coefs(N + 1);
     int temp;
     for (int i = 0; i < N + 1; i++) {
         std::cin >> temp;
         coefs[N  - i] = temp;
     }
 
-    int poly_value;
-    int x;
-    int pow;
+    int32_t poly_value;
+    uint32_t x;
+    uint32_t pow;
     while (M--) {
         poly_value = 0;
         pow = 1;
